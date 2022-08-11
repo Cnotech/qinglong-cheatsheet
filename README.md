@@ -4,7 +4,11 @@
 `https://github.com/KingRan/KR.git`
 
 ## 订阅后执行
-`cp -r /ql/data/repo/KingRan_KR_main/* /ql/data/scripts/KingRan_KR_main`
+```
+cp -r /ql/data/repo/KingRan_KR_main/* /ql/data/scripts/KingRan_KR_main
+cp /ql/data/repo/KingRan_KR_main/USER_AGENTS.js /ql/data/scripts
+cp /ql/data/repo/KingRan_KR_main/USER_AGENTS.js /ql/data/scripts
+```
 
 ## 安装依赖
 Node.js
