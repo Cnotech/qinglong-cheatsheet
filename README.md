@@ -1,5 +1,16 @@
 # 青龙面板-京豆薅羊毛小抄
 
+## 部署 Docker
+```
+docker run -dit \
+  -v $PWD/ql:/ql/data \
+  -p 5700:5700 \
+  --name qinglong \
+  --hostname qinglong \
+  --restart unless-stopped \
+  whyour/qinglong:latest
+```
+
 ## 订阅仓库
 `https://github.com/KingRan/KR.git`
 
