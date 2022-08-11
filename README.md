@@ -45,5 +45,5 @@ requests
 ```
 
 ## 配置环境变量
-- `JD_COOKIE` 配置为 Cookie
+- `JD_COOKIE` 配置为 Cookie，[登录](https://m.jd.com)后在网络请求选项卡中复制 Cookie
 - `JD_CART` 配置为 `true` （用于自动清理购物车）
