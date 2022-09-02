@@ -11,6 +11,35 @@ docker run -dit \
   whyour/qinglong:latest
 ```
 
+## 添加通知渠道
+### Server 酱
+
+  `https://sct.ftqq.com/sendkey`
+### 企业微信应用
+- corpid 
+
+  `https://work.weixin.qq.com/wework_admin/frame#profile`
+
+  底部“企业ID”
+
+- corpsecret
+
+  `https://work.weixin.qq.com/wework_admin/frame#apps/modApiApp`
+
+  进入对应应用之后点击“查看Secret”
+
+- touser
+
+  `https://work.weixin.qq.com/wework_admin/frame#contacts`
+
+  点击需要推送的用户，复制其“帐号”
+
+- agentid
+
+  `https://work.weixin.qq.com/wework_admin/frame#apps/modApiApp`
+
+  进入对应应用之后复制“AgentId”
+
 ## 订阅仓库
 `https://github.com/KingRan/KR.git`
 
