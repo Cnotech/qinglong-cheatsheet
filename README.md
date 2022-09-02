@@ -1,9 +1,10 @@
 # 青龙面板-京豆薅羊毛小抄
 
 ## 部署 Docker
+注意需要挂载 `/hdisk` 这个路径
 ```
 docker run -dit \
-  -v $PWD/ql:/ql/data \
+  -v /hdisk/ql:/ql/data \
   -p 5700:5700 \
   --name qinglong \
   --hostname qinglong \
@@ -14,34 +15,41 @@ docker run -dit \
 ## 添加通知渠道
 ### Server 酱
 
-  `https://sct.ftqq.com/sendkey`
+  https://sct.ftqq.com/sendkey
 ### 企业微信应用
 - corpid 
 
-  `https://work.weixin.qq.com/wework_admin/frame#profile`
+  https://work.weixin.qq.com/wework_admin/frame#profile
 
   底部“企业ID”
 
 - corpsecret
 
-  `https://work.weixin.qq.com/wework_admin/frame#apps/modApiApp`
+  https://work.weixin.qq.com/wework_admin/frame#apps/modApiApp
 
   进入对应应用之后点击“查看Secret”
 
 - touser
 
-  `https://work.weixin.qq.com/wework_admin/frame#contacts`
+  https://work.weixin.qq.com/wework_admin/frame#contacts
 
   点击需要推送的用户，复制其“帐号”
 
 - agentid
 
-  `https://work.weixin.qq.com/wework_admin/frame#apps/modApiApp`
+  https://work.weixin.qq.com/wework_admin/frame#apps/modApiApp
 
   进入对应应用之后复制“AgentId”
 
 ## 订阅仓库
-`https://github.com/KingRan/KR.git`
+- 链接 `https://github.com/KingRan/KR.git`
+- 分支 `main`
+
+## 定时规则
+`0 5 * * *`
+
+## 文件后缀
+`js ts py`
 
 ## 订阅后执行
 ```
